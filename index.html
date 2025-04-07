@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Task Manager</h1>
+    
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required />
+      <input type="text" id="task-type" placeholder="Task Type" required />
+      <textarea id="task-desc" placeholder="Task Description" required></textarea>
+      <input type="color" id="task-color" value="Choose Background Color" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="controls">
+      <button id="clear-tasks">🧹 Clear All Tasks</button>
+    </div>
+
+    <div id="task-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
